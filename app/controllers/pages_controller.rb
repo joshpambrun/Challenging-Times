@@ -4,4 +4,8 @@ class PagesController < ApplicationController
 
   def about
   end
+  
+  def lizards
+    @lizard_num = params[:number].to_i
+  end
 end

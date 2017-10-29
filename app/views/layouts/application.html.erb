@@ -6,9 +6,15 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <style>
+      body {
+        background-color: #00FF00;
+      }
+    </style
   </head>
 
   <body>
+  <%= render "common/menu" %>
     <%= yield %>
   </body>
 </html>
